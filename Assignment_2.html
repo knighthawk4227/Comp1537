@@ -1,0 +1,198 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Blueberries</title>
+      <meta charset="utf-8"/>
+      <style>
+        body {
+          background-color: gray;
+        }
+        .Logo {
+            height: 10%;
+            width: 5%;
+            padding: 0px;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+						z-index: 1;
+            display: inline;
+            min-width: 5%;
+            
+        }
+				#Banner {
+					display: flex;  /*aligns items to the left of it or right too maybe idk just made it line up */
+					padding: 10px;
+					height: 10%;
+					align-items: center;
+					position: fixed;
+					top: 0px;
+					left: 75px;
+					right: 0;
+					z-index: 2;
+					background-color: rgb(143, 85, 143);
+					
+				}
+				.Fact_box {
+					top: 30%;
+					right: 20px;
+					width: 400px;
+					position: absolute;
+					float: right;
+				}
+				fieldset {
+					border: 2px solid black;
+				}
+            /*Style needs Element selectors
+            Id selectors 
+            Class selectors 
+            Universal selectors 
+            Combinatory 
+            Attribute 
+            Pseudo code selectors*/
+				#content {
+					margin-top: 100px;
+				}
+				.Farm{
+					top: 55%;
+					position: absolute;
+					margin: auto;
+					height: 30%;
+					width: 26%;
+					right: 1.5%;
+				}
+
+        a:link {
+          color: red;
+        }
+        a:visited {
+          color:red
+        }
+        div > p {
+          display: inline;  /*makes it stick to not going past words*/
+          background-color: yellow ;
+        }
+
+        /* img [alt=b] {
+          
+        } */
+        button:hover {
+          color: purple;
+        }
+
+        * { 
+          box-sizing: border-box;
+        }
+        fieldset {
+          width: fit-content;
+        }
+        a:hover {
+          color: orange;
+        }
+        tbody tr:hover {
+          background-color: blue;
+          color: white;  /*anything in table row will be blue when hovered over*/
+          transition: .8s;
+        }
+        .courses {  /*This is the table class identifier*/
+          margin: auto;
+          border-collapse: collapse; /*adds the lines around the whole thing without this it is just at the top */
+          width: 50%;
+          text-align: center;
+        }
+        th, tr {
+          border: 1px solid black;  /*This is the border around the table*/
+          
+        }
+      </style>
+  </head>
+  <body>
+      <header>
+        <div>
+          <figure>
+            <img class="Logo" alt="Blueberries" src="./Blueberry_2.jpg" > 
+          </figure>
+      </div>
+    <div id="Banner">
+			<h1>Blueberries WOO WOO WOO</h1>
+		</div>
+      </header>
+
+    <div id="content">
+      <h3>This is why Blueberries are the best fruit hands down no questions asked</h3>
+        <b>They have high antioxidant levels</b>  <!-- why can these headers not be <li>-->
+          <ul>
+					  <li>Blueberries are considered one of the higher of sources for antioxidants</li>
+					  <li>Help to protect against free radicals? (Never heard of them.)</li>
+					  <li>They may also help reduce inflamation</li>
+				  </ul>
+            <br>
+        <b>Blueberries are low in calories but high in <i>nutrients</i></b>
+				  <ol>
+					  <li>Vitamin C, K1, Maganese, </li>
+					  <li>Helps with heart disease</li>
+					  <li>blood sugar levels</li>
+					  <li>Brain health is helped</li>
+				  </ol>
+      
+				  <br>
+        
+			  <b>Native to North America</b>
+  				<ol>
+		  			<li>Blueberries have been around for 13,000 years </li>
+	 		  		<li>Commercially cultivated for selling in 1900s</li>
+				  	<li>North America grows 1 billion pounds of blue berries per year</li>	
+		    	</ol>
+      <br> <br> <br>  <br> <br> <br> <br> <br>
+     <table class="courses">
+      <tr>
+        <th>Courses</th>
+        <th>Credits</th>
+        <th>Number</th>
+      </tr>
+      <tr>
+        <td>Computer programming</td>
+        <td> 7.0 Credits</td>
+        <td>1510 </td>
+      </tr>
+      <tr>
+        <td>Web Dev</td>
+        <td>4.0 Credits</td>
+        <td>1537</td>
+      </tr>
+      <tr>
+        <td>Applied Math</td>
+        <td>4.0 Credits</td>
+        <td>1113 </td>
+      </tr>
+    </table>    
+					<figure>
+						<img class="Farm" alt="blueberry_farm" src="./Blueberry_hearts.jpg">
+					</figure>
+	  </div>
+    <div class="Fact_box"><fieldset ><legend> FACTS</legend> blueberry weighs .3 grams and there is 1000 grams in a kilogram 
+				meaning that there 3,333 blueberries per kilogram. 	<br> The crazy part is with 453 million kilograms of blueberries produced per year 
+				that means there is 1.51 trillion blueberries produced per year just in north america. <abbr title="bluberries ">Bloobs</abbr> are <b>delicious</b> and <i>nutritious</i>. They've been cultivated for over 100 years. 
+        <span>Try them today!</span></fieldset>
+		</div>
+		
+    <div>
+      <p>
+        Blueberries are <b>delicious</b> and <i>nutritious</i>. They've been cultivated for over 100 years. 
+        <span>Try them today!</span>
+        <fieldset>
+          <legend>Newsletter</legend>
+          <form>
+          <input type="email" id="fname" name="email" placeholder="email"  required pattern="[a-zA-Z]{2,20}" oninvalid="this.setCustomValidity('Invalid')" oninput="this.setCustomValidity('')">
+          <button type="submit">Submit</button> <button type="reset">Reset</button>
+        </form>
+        </fieldset>
+      </div>
+      <footer>
+				<nav><h6>This info was taken from <a href="https://www.webmd.com/diet/health-benefits-blueberries" target="_blank"> WebMD</a>
+					and <a href="https://blueberry.org/health-benefits/nutrition-facts/#:~:text=Blueberries%20are%20a%20healthy%2C%20stress,just%2080%20calories%20per%20cup.&text=They're%20also%20low%20in,good%20about%20what%20you%20eat." target="blank"> Blueberry.org</a>		
+				
+				</h6></nav>
+			</footer> 
+
+  </body>
+</html>
