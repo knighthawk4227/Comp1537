@@ -12,7 +12,7 @@ body {
 }
 
 img {
-    display: block;
+    display: flex;
     width: 100%;
     height: auto;
 
@@ -48,46 +48,73 @@ p {
 
 /*Header showcase */
 
-.showcase {
-    min-height: 300pt;
+.showcase{
     color: #fff;
-    text-align: center;
+    align-items: center;
+}
+.showcase-header {
+    display: flex;
+    flex-direction: column-reverse;
 }
 .showcase .bg-image {
-    position: absolute;
-    background-position: center;
-    background-size: cover;
+    width: 70pt;
+    height: 70pt;
+    clip-path: circle(50%);
+    background-color: aqua;
+    margin: 3%;
+    align-self: center;
+    
+}
+#main .key-image {
     width: 100%;
-    height: 380pt;
-    z-index: -1;
-    opacity: 0.7;
+    margin: 0px;
 }
-
-.showcase h1 {
-    padding-top: 50pt;
-    padding-bottom: 0;
-
+#main {
+    padding: 0px;
 }
-
 .showcase .content-wrap, 
 #section-a .content-wrap {
-    padding: 0 1.5em;
+    padding: 0 0;
 }
 
 /* Section A */
+
+#main {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 #section-a {
     background: #eaeaea;
     color: #333;
     padding-bottom: 2em;
-    
+    margin: 0px;
+    padding: 0px;
+}
 
+.content-wrap, 
+.key-image,
+.key-image img {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    position: relative;
+}
+.caption1 {
+    position: absolute;
+    bottom: 10%;
+    background-color: #eaeaea;
+    padding: 5pt;
+    width: 350pt;
+    text-align: left;
+    font-size: 24px;
 }
 
 /* Sections b*/
 
 #section-b {
-    padding: .2em .2em ;
+    padding: 0.2em 0.2em;
 }
 
 #section-b ul {
@@ -162,14 +189,14 @@ p {
 
     }
     .bg-image img {
-        width: 100pt;
-        height: 100pt;
-        border-radius: 50%;
+        width: 70pt;
+        height: 70pt;
+        border-radius: 100%;
         left: 12pt; 
         margin-top: 0pt;
     }
     .grid-1 {
-        grid-template-columns: auto;
+        display: flex;
     }
     .grid {
         display: grid;
@@ -214,6 +241,13 @@ p {
 }
 
 @media(min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .section-b .card {
+
+    }
     .showcase-header, .links {
         display: grid;
         grid-column: 1;
@@ -247,18 +281,22 @@ p {
         opacity: 0.7;
     }
     .bg-image img {
-        width: 100pt;
-        height: 100pt;
-        border-radius: 50%;
+        width: 70pt;
+        height: 70pt;
+        border-radius: 100%;
         left: 12pt; 
         margin-top: 0pt;
+
     }
     .grid-1 {
-        grid-template-columns: 1;
+        display: flex;
     }
     .grid {
         display: grid;
-        grid-template-columns:  2;
+        grid-template-columns: auto;
+    }
+    .section-b .grid {
+        grid-template-columns: 20% 20% 20% 20%;
     }
 
     #section-a .content-text {
