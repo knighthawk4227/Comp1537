@@ -155,7 +155,6 @@ p {
 /*footer */
 
 #main-footer {
-    padding: 2em;
     background: #000;
     color: #fff;
     text-align: center;
@@ -165,6 +164,31 @@ p {
     color:#2690d4;
     text-decoration: none;
 }
+.more-links {
+    display: none;
+}
+#main-footer{
+    width: 100vw;
+    padding: .5pt;
+    position: relative;
+
+}
+
+#main-footer .watermark {
+    text-align: left;
+
+    height: 1vh;
+}
+#main-footer .left {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#main-footer .right{
+    text-align: right;
+    margin: 10pt;
+}
+
 
 /*Media queries */
 
@@ -178,7 +202,7 @@ p {
     .showcase-header {
         padding: 12pt;
     }
-    .links {
+    .links{
         position: absolute;
         right: 0pt;
     }
@@ -216,8 +240,8 @@ p {
         grid-column: 1/4;
     }
 
-    .box, #main-footer div {
-        grid-column: span 4;
+    #main-footer div {
+        
     }
 
     #section-b ul {
@@ -237,13 +261,34 @@ p {
         padding: .5em 2em;
         border: none;
     }
+    #main-footer{
+        width: 100vw;
+        padding: .5pt;
+        position: relative;
+
+    }
+
+    #main-footer .watermark {
+        text-align: left;
+
+        height: 1vh;
+    }
+    #main-footer .left {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #main-footer .right{
+        text-align: right;
+        margin: 10pt;
+    }
 
 }
 
 @media(min-width: 1024px) {
     body {
         display: grid;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: 20% 80%;
     }
     .section-b .card {
 
@@ -261,7 +306,45 @@ p {
     .links {
         flex-direction: column;
         right: 1070pt;
-        margin-top: 200pt;
+        margin-top: 50pt;
+    }
+    .more-links {
+        display: grid;
+        grid-column: 1;
+        margin-top: 26pt;
+        max-height: 16pt;
+        position: relative;
+        margin-top: 80pt;
+    }
+    .more-links a {
+                
+    }
+    .more-links :hover {
+        color: #2690d4;
+    }
+    .more-links :visited {
+        color: #2690d4;
+    }
+    #main-footer{
+        width: 100vw;
+        padding: .5pt;
+        position: relative;
+
+    }
+
+    #main-footer .watermark {
+        text-align: left;
+
+        height: 1vh;
+    }
+    #main-footer .left {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #main-footer .right{
+        text-align: right;
+        margin: 10pt;
     }
     
     .links a {
@@ -310,10 +393,6 @@ p {
     .content-wrap,
     #section-b ul {
         grid-column: 1/4;
-    }
-
-    .box, #main-footer div {
-        grid-column: span 4;
     }
 
     #section-b ul {
