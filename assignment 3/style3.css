@@ -123,6 +123,7 @@
     font-size: 15px;
   }
 
+
   /* Sections b*/
 
   #section-b {
@@ -141,9 +142,9 @@
     color: #333;
   }
 
-  .card-content { 
+  /* .card .card-content { 
     padding: 1.5em;
-  }
+  } */
 
   /*Section c*/
 
@@ -196,6 +197,7 @@
   }
   #main-footer .left {
     position: absolute;
+    left: 1em;
     top: 50%;
     transform: translate(0, -50%);
   }
@@ -206,6 +208,7 @@
   .links {
     display: flex;
     flex-wrap: wrap;
+    font-family: "Texturina", serif;
   }
   
 
@@ -222,6 +225,9 @@
     }
     #main-footer { 
       font-size: 10pt;
+    }
+    .main > .content-wrap {
+      left: 0;
     }
   }
 
