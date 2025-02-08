@@ -371,14 +371,18 @@
     .more-links :visited {
         color: #2690d4;
     }
-    .articles {
+     .showcase-header .articles {
       display: flex;
       flex-direction: row;
         grid-column: 1;
-        margin-top: 26pt;
-        max-height: 16pt;
+        max-height: auto;
         position:relative;
-        margin-top: 150pt;
+        margin-top: 70pt;
+    }
+    .articles p {
+      border: 2px solid;
+      border-color: whitesmoke;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.145) ;
     }
 
     #main-footer .watermark {
