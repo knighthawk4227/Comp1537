@@ -1,0 +1,59 @@
+{
+  "recipes": [
+    {
+      "name": "Raspberry Smoothie",
+      "ingredients": [
+        "1 cup fresh raspberries",
+        "1 banana",
+        "1/2 cup Greek yogurt",
+        "1/2 cup almond milk",
+        "1 tbsp honey",
+        "Ice cubes (optional)"
+      ],
+      "instructions": [
+        "Combine all ingredients in a blender.",
+        "Blend until smooth.",
+        "Pour into a glass and serve immediately."
+      ]
+    },
+    {
+      "name": "Raspberry Cheesecake",
+      "ingredients": [
+        "1 1/2 cups graham cracker crumbs",
+        "1/4 cup melted butter",
+        "2 cups cream cheese, softened",
+        "1/2 cup sugar",
+        "1 tsp vanilla extract",
+        "2 eggs",
+        "1/2 cup raspberry jam",
+        "1/2 cup fresh raspberries"
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (163°C).",
+        "Mix graham cracker crumbs with melted butter and press into a baking dish.",
+        "In a bowl, beat cream cheese, sugar, and vanilla until smooth.",
+        "Add eggs one at a time, mixing well.",
+        "Pour mixture over crust and bake for 40 minutes.",
+        "Let cool, then spread raspberry jam on top and garnish with fresh raspberries.",
+        "Refrigerate for at least 2 hours before serving."
+      ]
+    },
+    {
+      "name": "Raspberry Lemonade",
+      "ingredients": [
+        "1 cup fresh raspberries",
+        "1/2 cup lemon juice",
+        "1/4 cup sugar",
+        "3 cups cold water",
+        "Ice cubes",
+        "Lemon slices for garnish"
+      ],
+      "instructions": [
+        "Blend raspberries, lemon juice, and sugar until smooth.",
+        "Strain the mixture to remove seeds.",
+        "Mix with cold water and stir well.",
+        "Serve over ice and garnish with lemon slices."
+      ]
+    }
+  ]
+}
